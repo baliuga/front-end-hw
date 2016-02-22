@@ -1,0 +1,22 @@
+body {
+	background-color: #efefef;
+}
+.wrapper
+{
+    box-shadow: 0 0 2px 2px rgba(221, 221, 221, 1);
+	padding: 20px 45px 48px;
+	background-color: white;
+	margin: 30%;	
+	margin-top: 0px;
+}
+.block {
+	margin-left: 20px;
+}
+p, li{
+	line-height: 1.6;
+}
+img {
+	border-radius: 50%; 
+	width: 150px;
+	height: 150px;
+}
