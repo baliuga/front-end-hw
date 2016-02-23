@@ -1,0 +1,37 @@
+table, th, td {
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	text-align: center;
+	padding: 15px 35px;	
+}
+#wrapper{
+	margin: 0 auto;
+    width: 35%; 
+    padding: 30px;
+}
+.bottom {
+	border-bottom:none;
+}
+.top {
+	border-top:none;
+}
+.right{
+	border-right: none;
+}
+.left{
+	border-left: none;
+}
+.red {
+	background-color: #ff6123;
+}
+.blue {
+	background-color: #054b8c;
+}
+.yellow {
+	background-color: #fff668;
+}
+.black {
+	background-color: #343434;
+}
