@@ -8,7 +8,7 @@ p {
 	line-height: 1.6;
 	text-align: justify;
 }
-.wrapper{
+.wrapper {
 	margin: 0 auto; 
 	width: 1060px; 
 }
@@ -17,14 +17,14 @@ p {
 	padding: 45px;
 	background: white; 
 }
-.logo{
+.logo {
 	padding: 0px 0px 40px;
 }
 #header { 
 	width: 970px;
 	height: 40px;
- background-image: url('../img/header.png');
-  
+	background-image: url('../img/header.png');
+	
 }
 .sidebar { 
 	float: left; 
@@ -42,8 +42,7 @@ p {
 	border:  1px solid #c8c8c8;
 
 }
-.centered
-{
+.centered {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 30px 0px;
@@ -59,24 +58,27 @@ p {
 }
 /* Header menu */
 ul.headmenu {  
-    overflow: hidden;
-    height: 40px;
+	overflow: hidden;
+	height: 40px;
 }
 ul.headmenu li {
 	float: left;    
-    list-style: none;
-    margin-right: 50px;
+	list-style: none;
+	margin-right: 50px;
 }
 ul.headmenu li a {
 	display: inline-block;  
-    height: 40px;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 4px black;
-    font-size: 15px;   
-    padding: 13px;
-    border: transparent;
+	height: 40px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 4px black;
+	font-size: 15px;   
+	padding: 13px;
+
+	border-right:  1px solid transparent;
+	border-left:  1px solid transparent;
+
 }
 ul.headmenu li a:hover {
 	background-image: url('../img/selected.png');
@@ -119,4 +121,3 @@ ul.footmenu li:last-child {
 ul.footmenu li a:hover {
 	text-decoration: underline;
 }
-
