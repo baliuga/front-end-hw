@@ -12,6 +12,9 @@ body {
 .block {
 	margin-left: 20px;
 }
+.centered {
+	align: center;
+}
 p, li{
 	line-height: 1.6;
 }
