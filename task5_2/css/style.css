@@ -6,10 +6,10 @@ th, td {
 	text-align: center;
 	padding: 15px 35px;	
 }
-#wrapper{
+#wrapper {
 	margin: 0 auto;
-    width: 35%; 
-    padding: 30px;
+	width: 35%; 
+	padding: 30px;
 }
 .bottom {
 	border-bottom:none;
@@ -17,10 +17,10 @@ th, td {
 .top {
 	border-top:none;
 }
-.right{
+.right {
 	border-right: none;
 }
-.left{
+.left {
 	border-left: none;
 }
 .red {
