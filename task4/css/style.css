@@ -29,15 +29,14 @@ p {
 
 /* Content */
 .content  {
-  display: -webkit-flex;
   display: flex; 
 }
 .content div {
   padding-top: 10px;
-  text-align: justify;
 }
 .content p {
-  margin: 15px 0px 0px 40px;
+  margin: 15px 40px;
+  line-height: 1.7;  
 }
 .main {
   width: 50%;
@@ -47,7 +46,6 @@ p {
 .news, .info{
   width: 25%;  
   z-index: 1; 
-  position: relative; 
   padding-bottom: 20000px;
   margin-bottom: -20000px;
   background: #edeef0; 
@@ -84,7 +82,7 @@ p {
   right: 0px;
   top: 0px;
 }
-.contacts{
+.contacts {
  font-size: 12px;
  font-family: Tahoma, sen-serif; 
  color: #128aa7;
@@ -96,7 +94,7 @@ p {
   bottom: 10px;
 }
 .block-countries  ul {
-  display:table-row; 
+  display: table-row; 
 }
 .block-countries  ul li  { 	   
   display: table-cell;
@@ -123,18 +121,20 @@ p {
 .headmenu {
   z-index: 2; 
   position: relative; 
-  box-shadow: 0 0 5px 1px rgba(0,0,0,0.71); background: url('../img/menu.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  box-shadow: 0px 3px 2px 0.5px rgba(0,0,0,0.5);
+  background: url('../img/menu.png') no-repeat center center fixed;
   background-size: cover;
   color: #fff;  
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 30px;
+  border-bottom: 1px solid black;
+  margin-top: 1px;
 }
 .menu li {
   float: left;
+  margin: 0px 20px;
 } 
 .menu li a {
   color: #fff;
@@ -145,12 +145,21 @@ p {
 .dropdown .submenu {
   position: absolute;
   display: none;
-  box-shadow: 0 0 5px 1px rgba(0,0,0,0.71); 
+  box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.71); 
+  background: #343434;    
+  margin-top: 2.9px;
+  z-index: 1; 
 }
 .dropdown .submenu li a {  
- padding: 5px 10px 5px 8px;
- background: #303030; 
+ padding: 0px;
+ width: 100px;
 }   
+.dropdown .submenu li {  
+ margin: 7px 30px 5px 10px;
+}  
+.dropdown .submenu li:last-child {  
+ margin-bottom: 10px;
+} 
 .dropdown {
   position: relative;
 }
