@@ -1,9 +1,8 @@
 body {
 	background-color: #efefef;
 }
-.wrapper
-{
-    box-shadow: 0 0 2px 2px rgba(221, 221, 221, 1);
+.wrapper {
+	box-shadow: 0 0 2px 2px rgba(221, 221, 221, 1);
 	padding: 20px 45px 48px;
 	background-color: white;
 	margin: 30%;	
@@ -13,9 +12,9 @@ body {
 	margin-left: 20px;
 }
 .centered {
-	align: center;
+	text-align:center;
 }
-p, li{
+p, li {
 	line-height: 1.6;
 }
 img {
