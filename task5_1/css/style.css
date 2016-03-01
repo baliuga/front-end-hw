@@ -11,12 +11,11 @@
 body {
 	font-size: 14px;
 	font-family: 'Helvetica',Tahoma, sen-serif;		
-
 }
-#pict{
+#pict {
 	visibility: hidden;
 }
-#back{
+#back {
 	height: 100%;
 	width: 100%;
 	background: url('../img/2.png') top center no-repeat;
@@ -32,25 +31,25 @@ body {
 	display: flex; 
 	justify-content: flex-end;
 }
-#icon{
+#icon {
 	padding-top: 7px;
 	height: 22px;
 	width: 22px;
 }
-.greeting, .login{
+.greeting, .login {
 	padding: 8px 20px 8px 8px;
 	color: #fff;
 }
-.login{
+.login {
 	padding: 8px;
 	margin-right: 20px;
 	background: linear-gradient(#50afdc, #2e7ac4); 
 	border: 1px solid #56a2dc;
 }
-.login a:visited{
+.login a:visited {
 	color: #fff; 
 }
-.login a{
+.login a {
 	color: #fff; 
 }
 .menu {
@@ -72,12 +71,12 @@ body {
 	color: #fff; 
 	background-color: #4eabda;
 }
-.menu li:last-child{
+.menu li:last-child {
 	padding-right: 10px;
 }
 
 /* Content */
-.content{
+.content {
 	background-color: transparent;
 	width: 550px;
 	height: 610px;
@@ -88,11 +87,11 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.content div{
+.content div {
 	width: 100%;
 	background-color:rgba(0,0,0,0.6);
 }
-.header{
+.header {
 	margin-bottom: 2px;
 	height: 50px;
 }
@@ -112,7 +111,7 @@ body {
 	color: #999999;
 	text-align: center;
 }
-.fancy span:before,.fancy span:after {
+.fancy span:before, .fancy span:after {
 	content: "";
 	position: absolute;
 	height: 6px;
@@ -130,38 +129,36 @@ body {
 }
 
 /* Form */
-.inputform{
+.inputform {
 	height: 570px;
 	display: flex;
 	align-items: center;
 	justify-content: center
 }
-form > input{
+form > input {
 	background:	#0f0e0e;
 	border:none;
 	border-bottom:1px solid gray;
 	padding: 8px 10px;
-	width: 255px;
+	width: 255px;	
+	color: white; 
 }
-form > *{	
-	font-family: 'Helvetica',Tahoma, sen-serif;	
+form > * {	
+	font-family: 'Helvetica', Tahoma, sen-serif;	
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
-form > input:not([type='checkbox']):hover{
-	background:#1b5288;	
+form > input:not([type='checkbox']):hover {
+	background: #1b5288;	
 }
-form > input:not([type='checkbox']):hover,button:hover,.facebook:hover{
-	box-shadow: 0px 0px 9px 1px #699bcd;
+form > input:not([type='checkbox']):hover, button:hover, .facebook:hover {
+	box-shadow: 0px 0px 9px 2px #699bcd;
 }
 .create {	
 	border: 1px solid #67c6e6;
-	background: -webkit-gradient(linear, left top, left bottom, from(#50aedb), to(#2e7ac4));
-	background: -webkit-linear-gradient(top, #50aedb, #2e7ac4);
-	background: -moz-linear-gradient(top, #50aedb, #2e7ac4);
-	background: -ms-linear-gradient(top, #50aedb, #2e7ac4);
-	background: -o-linear-gradient(top, #50aedb, #2e7ac4);
+	cursor: pointer;
+	background: linear-gradient(#50aedb, #2e7ac4); 
 	padding: 7px 15px;
 	border-radius: 2px;
 	color: #fff;
@@ -180,9 +177,6 @@ form > input:not([type='checkbox']):hover,button:hover,.facebook:hover{
 }
 .bold{
 	font-weight: bold;	
-}
-.first{
-	margin-left: 30px;
 }
 .last{
 	margin-right: 20px;
