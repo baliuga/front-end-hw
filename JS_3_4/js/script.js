@@ -37,13 +37,13 @@ var myPage = {
     },
 
     createOl: function(array) {
-        var list = document.createElement('ol');
+        var list = document.createElement("ol");
         for (var i = 0; i < array.length; i++) {
-            var item = document.createElement('li');
+            var item = document.createElement("li");
             item.classList.add("boldness");
             item.appendChild(document.createTextNode(array[i]));
 
-            var ulList = this.createUl(this.checkOptions);
+            var ulList = this.createUl(this.checkOptions, (i+1));
             item.appendChild(ulList);
 
             list.appendChild(item);
@@ -51,24 +51,25 @@ var myPage = {
         return list;
     },
 
-    createUl: function(array) {
-        var list = document.createElement('ul');
+    createUl: function(array, olId) {
+        var list = document.createElement("ul");
         list.classList.add("list-unstyled");
         for (var i = 0; i < array.length; i++) {
-            var item = document.createElement('li');
-            item.appendChild(this.createCheckbox(array[i]));
+            var item = document.createElement("li");
+            item.appendChild(this.createCheckbox(array[i], olId + "_" + (i+1)));
             list.appendChild(item);
         }
         return list;
     },
 
-    createCheckbox: function(title) {
-        var divCheck = document.createElement('div');
+    createCheckbox: function(title, checkId) {
+        var divCheck = document.createElement("div");
         divCheck.classList.add("checkbox");
 
-        var label = document.createElement('label');
-        var checkbox = document.createElement('input');
+        var label = document.createElement("label");
+        var checkbox = document.createElement("input");
         checkbox.setAttribute("type", "checkbox");
+		checkbox.setAttribute("id", "checkId" + checkId);
 
         label.appendChild(checkbox);
         label.appendChild(document.createTextNode(title));
@@ -76,11 +77,11 @@ var myPage = {
         return divCheck;
     },
     createButton: function() {
-        var butWrap = document.createElement('ol');
+        var butWrap = document.createElement("ol");
         butWrap.classList.add("centered");
         butWrap.classList.add("form-group");
 
-        var button = document.createElement('input');
+        var button = document.createElement("input");
         button.type = "button";
         button.value = "Проверить мои результаты";
         button.classList.add("btn");
