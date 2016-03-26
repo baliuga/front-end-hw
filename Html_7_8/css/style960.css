@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "league gothic";
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'open sans regular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  width: 100%;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  font-family: 'league gothic', sans-serif;
+}
+
+.fon_gradient {
+  position: absolute;
+  top: 846px;
+  width: 100%;
+  height: 342px;
+  border-top: 1px solid #33253a;
+  border-bottom: 1px solid #1d2f37;
+  background: linear-gradient(to top, #33263a, #745083);
+}
+
+.fon_transp {
+  position: absolute;
+  top: 278px;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 60px;
+}
+
+nav {
+  position: relative;
+}
+
+header .logo {
+  float: left;
+  color: white;
+  font-weight: bold;
+  font-size: 48px;
+  font-stretch: condensed;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.logo span {
+  color: #63456f;
+  text-shadow: none;
+}
+
+nav .menu {
+  position: absolute;
+  width: 710px;
+  top: -218px;
+  left: 270px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+  list-style: none;
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  transition: 0.25s linear opacity;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav li {
+  display: inline-block;
+  margin-top: 11px;
+  margin-left: 52px;
+  position: relative;
+}
+
+nav li:hover {
+  border-bottom: 1px solid #edbfff;
+}
+
+article {
+  float: left;
+  width: 46%;
+  margin-top: 83px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  position: absolute;
+}
+
+.content figure img {
+  position: absolute;
+  top: -15px;
+  left: 620px;
+}
+
+.content article h1 {
+  font-size: 60px;
+  color: white;
+  font-weight: normal;
+}
+
+.content article h4 {
+  margin-top: -10px;
+  color: #edbfff;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.content article p {
+  margin-top: 2px;
+  color: white;
+  font-family: 'open sans regular', sans-serif;
+  font-size: 18px;
+}
+
+.clearfix {
+  overflow: hidden;
+  clear: both;
+}
+
+#small {
+  display: none;
+}
+
+.content .carusel img {
+  position: absolute;
+  top: 435px;
+  left: 710px;
+}
+
+aside {
+  float: left;
+  color: white;
+  width: 33.3%;
+  margin-top: 73px;
+}
+
+aside h2 {
+  margin-bottom: 4px;
+  text-shadow: 1px 1px 0px rgba(15, 21, 24, 0.9);
+  font-size: 30px;
+  font-weight: normal;
+}
+
+aside h4 {
+  margin-top: 17px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+aside a {
+  color: white;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+aside p {
+  font-size: 16px;
+  font-family: 'open sans regular', sans-serif;
+  line-height: 1.5;
+  text-shadow: 1px 1px 0px rgba(15, 21, 24, 0.9);
+}
+
+.aside__icon {
+  float: left;
+  width: 27px;
+  height: 27px;
+  margin-bottom: 150px;
+  margin-top: 11px;
+  margin-right: 26px;
+  margin-left: 10px;
+}
+
+.aside__text {
+  display: inline;
+}
+
+.position1 {
+  background: url(../img/icons_spr.png) -1px 0;
+}
+.position1:hover {
+background: url(../img/icons_spr.png) -1px 27px;
+}
+.position2 {
+  background: url(../img/icons_spr.png) -30px 0;
+}
+.position2:hover {
+  background: url(../img/icons_spr.png) -30px 27px;
+}
+.position3 {
+  background: url(../img/icons_spr.png) -60px 0;
+}
+.position3:hover {
+  background: url(../img/icons_spr.png) -60px 27px;
+}
+.arrow_left {
+  position: absolute;
+  top: 463px;
+}
+
+.arrow_right {
+  position: absolute;
+  top: 463px;
+  left: calc(100% - 26px);
+}
+
+.fon_chat {
+  position: absolute;
+  top: 1190px;
+  width: 100%;
+  height: 485px;
+  background-color: #f9f9f9;
+}
+
+aside .format h2 {
+  margin-top: 30px;
+  text-transform: uppercase;
+  line-height: 0.8;
+  color: #454545;
+}
+
+aside .format span {
+  color: #edbfff;
+  text-shadow: 1px 1px 0px rgba(237, 191, 255, 0.9);
+}
+
+.aside {
+  width: 50%;
+}
+
+.format p {
+  color: black;
+  text-shadow: none;
+  margin: 14px 56px 60px 0;
+}
+
+.blog {
+  background: url(../img/chat.png) no-repeat 24px 0;
+}
+
+.position4 {
+  margin-left: 0px;
+  margin-right: 36px;
+  margin-top: 16px;
+  margin-bottom: 170px;
+}
+
+.post h2 {
+  margin-top: 30px;
+  margin-left: 28px;
+  line-height: 0.8;
+  color: #454545;
+}
+
+.format h4 {
+  font-size: 16px;
+  font-family: 'open sans regular', sans-serif;
+  color: black;
+  line-height: 1.5;
+  margin-top: 17px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.post .aside__icon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0px;
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-left: 28px;
+}
+
+.post p {
+  margin: 0 0 18px 0;
+}
+
+.position5 {
+  background: url(../img/iconpost.png) no-repeat 0 0;
+}
+
+.position6 {
+  background: url(../img/iconpost.png) no-repeat 0 -50px;
+}
+
+.position7 {
+  background: url(../img/iconpost.png) no-repeat 0 -100px;
+}
+
+aside h3 {
+  color: black;
+  margin-right: 10px;
+  line-height: 1.333;
+  text-align: right;
+  font-size: 18px;
+}
+
+.item_invis {
+  display: none;
+}
+
+.point {
+  margin: 5px 0 0 165px;
+}
+
+.fon_banner {
+  position: absolute;
+  top: 1675px;
+  width: 100%;
+  height: 120px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.logos {
+  overflow: hidden;
+  margin-top: 25px;
+  margin-left: 63px;
+  margin-right: 63px;
+}
+
+.logo1 {
+  float: left;
+  margin-left: 27px;
+  margin-right: 27px;
+  width: 205px;
+  height: 64px;
+  background: url(../img/logos.png) no-repeat 0 0;
+}
+
+.logo2 {
+  float: left;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 193px;
+  height: 64px;
+  background: url(../img/logos.png) no-repeat -270px 0;
+}
+
+.logo3 {
+  float: left;
+  margin-left: 40px;
+  width: 250px;
+  height: 64px;
+  background: url(../img/logos.png) no-repeat -527px 0;
+}
+
+.fon_article {
+  position: absolute;
+  top: 1795px;
+  width: 100%;
+  height: 395px;
+  background-color: #ececec;
+  border-top: 1px solid #d8d8d8;
+}
+
+aside .copyright {
+  margin-top: 16px;
+  margin-bottom: 12px;
+  color: #c5c5c5;
+  line-height: normal;
+  font-family: 'Georgia', sans-serif;
+  font-style: italic;
+}
+
+#pingbuller {
+  font-size: 48px;
+}
+
+#pingbuller span {
+  color: #b9b9b9;
+}
+
+.item {
+  margin-right: 10px;
+}
+
+.zero {
+  float: left;
+  margin-top: 190px;
+}
+
+footer {
+  position: absolute;
+  top: 2190px;
+  width: 100%;
+  height: 114px;
+  background-image: url(../img/bgfooter.png);
+}
+
+#footer .footer {
+  float: left;
+}
+
+#footer {
+  margin-top: 34px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#footer a {
+  font-size: 20px;
+}
+
+#footer li {
+  margin-left: 0;
+  margin-right: 52px;
+}
+
+#footer li:hover {
+  border-bottom: 1px solid #edbfff;
+}
+
+#designed {
+  float: right;
+  margin-top: 20px;
+}
+
+#designed p {
+  color: white;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  text-align: right;
+  font-family: 'open sans regular', sans-serif;
+  font-size: 12px;
+}
+
+#designed span {
+  font-weight: bold;
+  font-family: 'open sans regular', sans-serif;
+}
