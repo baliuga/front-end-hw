@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>JS lab 9-10</title>
+   <link href="css/reset.css" rel="stylesheet" type="text/css">
+   <link href="css/style.css" rel="stylesheet" type="text/css">     
+   <link href="css/cusel.css" rel="stylesheet" type="text/css" />
+   <link href="css/jcarousel.basic.css" rel="stylesheet" type="text/css">
+
+   <script type="text/javascript" src="js/jquery-1.7.js"></script> 
+   <script type="text/javascript" src="js/cusel.js"></script>
+   <script type="text/javascript" src="js/jScrollPane.js"></script>
+   <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+   <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+   <script type="text/javascript" src="js/jcarousel.basic.js"></script>
+   <script type="text/javascript" src="js/jquery.color-2.1.2.min.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>    
+</head>
+<body>
+   <div class="wrapper">
+      <div id="cusel-wrapper">
+         <h1>CuSel Test Plugin</h1>    
+         <div class="testCusel">
+            <select id="selectTest" name="selectTest">
+               <option value="0" selected="selected">Select test</option>
+               <option value="1">Select test 1</option>
+               <option value="2">Select test 2</option>
+               <option value="3">Select test 3</option>
+               <option value="4">Select test 4</option>
+               <option value="5">Select test 5</option>
+               <option value="6">Select test 6</option>
+               <option value="7">Select test 7</option>
+               <option value="8">Select test 8</option>
+               <option value="9">Select test 9</option>
+            </select>
+         </div>
+      </div> 
+
+      <div id="checkBoxes">
+         <h1>Custom Checkboxes</h1>  
+         <div class="checkItem">
+            <input type="checkbox" id="c1" name="c1" class="cssCheckNoIm">
+            <label for="c1" class="cssCheckNoIm-label">Check Box 1</label>
+         </div>
+         <div class="checkItem">
+            <input type="checkbox" id="c2" name="c2" class = "cssCheck"/>
+            <label for="c2"><span></span>Check Box 2</label>
+         </div>
+         <div class="checkItem">
+            <input type="checkbox" id="c3" name="c3" class = "jCheck"/>
+            <label for="c3">Check Box 3</label>
+         </div>
+      </div>  
+
+      <div id="caruselTest">
+         <h1>jCarousel Test Plugin</h1>   
+         <div class="jcarousel-wrapper">
+          <div class="jcarousel">
+           <ul>
+            <li><img src="img/img1.jpg" alt=""></li>
+            <li><img src="img/img2.jpg" alt=""></li>
+            <li><img src="img/img3.jpg" alt=""></li>
+            <li><img src="img/img4.jpg" alt=""></li>
+            <li><img src="img/img5.jpg" alt=""></li>
+            <li><img src="img/img6.jpg" alt=""></li>
+         </ul>
+      </div>
+      <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+      <a href="#" class="jcarousel-control-next">&rsaquo;</a>     
+   </div>
+</div> 
+
+<div id="dropdown-menu">   
+   <h1>Custom Dropdown Menu</h1>  
+   <nav>
+     <ul class="main-menu">
+       <li><a href="#">Nav 1</a></li>
+       <li><a href="#">Nav 2</a></li>
+       <li class="dropdown">
+         <a href="#">Nav 3</a>
+         <ul class="sub-menu">
+           <li><a href="#">Nav 3.1</a></li>
+           <li><a href="#">Nav 3.2</a></li>
+           <li class="dropdown">
+             <a href="#">Nav 3.3</a>
+             <ul class="sub-menu">
+               <li><a href="#">Nav 3.3.1</a></li>
+               <li><a href="#">Nav 3.3.2</a></li>
+               <li><a href="#">Nav 3.3.3</a></li>
+            </ul>
+         </li>
+         <li><a href="#">Nav 3.4</a></li>
+      </ul>
+   </li>
+   <li><a href="#">Nav 4</a></li>
+</ul>
+</nav>
+</div>
+
+</div>   
+</body>
+</html>
