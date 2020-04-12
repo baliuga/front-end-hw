@@ -1,2 +1,2 @@
 # legorep
-Rep for Front-end Homework
+Rep for Homework
