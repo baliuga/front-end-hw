@@ -1,2 +1,2 @@
-# legorep
-Rep for Homework
+Repo for HTML/CSS/JS Homework.
+Nothing else ;)
